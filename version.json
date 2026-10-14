@@ -1,5 +1,9 @@
 {
-  "notes": "",
+  "notes": "앱을 켜면 로그인 화면을 바로 띄우고, 새 버전이 나오면 알려 줍니다",
   "ios": null,
-  "android": null
+  "android": {
+    "build": 4,
+    "version": "1.0.0 (4)",
+    "url": "https://github.com/Lineus-github/kiwi-app-download/releases/download/android-4/kiwi-test-4.apk"
+  }
 }
