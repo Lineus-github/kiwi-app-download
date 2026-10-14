@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>KIWI 앱 받기</title>
+<link rel="icon" href="icon.png">
+<style>
+  :root {
+    --brand: #0E703A;
+    --brand-pale: #E8F3EC;
+    --ink: #17201B;
+    --muted: #5B6660;
+    --line: #DCE3DF;
+    --bg: #FFFFFF;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --brand: #3FA66B; --brand-pale: #16261D; --ink: #EEF3F0; --muted: #A3AEA8; --line: #2A332E; --bg: #0F1512; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Pretendard", "Noto Sans KR", sans-serif;
+    line-height: 1.55; word-break: keep-all;
+  }
+  main { max-width: 520px; margin: 0 auto; padding: 48px 20px 64px; }
+  .app { display: flex; align-items: center; gap: 16px; }
+  .app img { width: 72px; height: 72px; border-radius: 18px; }
+  h1 { font-size: 28px; line-height: 1.25; margin: 0; }
+  .sub { color: var(--muted); margin: 4px 0 0; font-size: 15px; }
+  .get { margin-top: 36px; display: grid; gap: 12px; }
+  .btn {
+    display: flex; justify-content: space-between; align-items: center;
+    min-height: 64px; padding: 0 20px; border-radius: 14px;
+    border: 1px solid var(--line); color: var(--ink); text-decoration: none; font-weight: 700; font-size: 17px;
+  }
+  .btn small { font-weight: 500; color: var(--muted); font-size: 14px; }
+  .btn.mine { background: var(--brand); border-color: var(--brand); color: #fff; }
+  .btn.mine small { color: rgba(255,255,255,.85); }
+  .btn[aria-disabled="true"] { pointer-events: none; opacity: .55; }
+  .btn:focus-visible { outline: 3px solid var(--brand); outline-offset: 2px; }
+  .notes { margin-top: 20px; padding: 14px 16px; border-radius: 12px; background: var(--brand-pale); font-size: 15px; }
+  .notes:empty { display: none; }
+  h2 { font-size: 17px; margin: 40px 0 8px; }
+  ol { margin: 0; padding-left: 20px; color: var(--muted); font-size: 15px; }
+  li + li { margin-top: 6px; }
+</style>
+</head>
+<body>
+<main>
+  <div class="app">
+    <img src="icon.png" alt="">
+    <div>
+      <h1>KIWI 앱</h1>
+      <p class="sub">사내 테스트판. 새 버전이 나오면 앱이 알려 줍니다.</p>
+    </div>
+  </div>
+
+  <div class="get">
+    <a class="btn" id="ios" aria-disabled="true" href="#">아이폰에서 받기 <small id="ios-v">준비 중</small></a>
+    <a class="btn" id="android" aria-disabled="true" href="#">안드로이드에서 받기 <small id="android-v">준비 중</small></a>
+  </div>
+  <p class="notes" id="notes"></p>
+
+  <h2>아이폰</h2>
+  <ol>
+    <li>앱스토어에서 TestFlight 를 설치합니다.</li>
+    <li>위 «아이폰에서 받기» 를 눌러 테스트에 참여한 뒤 설치합니다.</li>
+    <li>새 버전은 TestFlight 가 알려 주고, 앱에서도 «받기» 창이 뜹니다.</li>
+  </ol>
+
+  <h2>안드로이드</h2>
+  <ol>
+    <li>«안드로이드에서 받기» 를 눌러 파일을 내려받습니다.</li>
+    <li>내려받은 파일을 열고, 처음 한 번은 «이 출처 허용» 을 켭니다.</li>
+    <li>새 버전도 같은 방법으로 받으면 덮어 설치됩니다. 로그인 상태는 그대로입니다.</li>
+  </ol>
+</main>
+<script>
+  // 버전 정보는 앱이 읽는 것과 같은 version.json 에서 가져온다
+  var ua = navigator.userAgent;
+  var mine = /iPhone|iPad|iPod/.test(ua) ? 'ios' : /Android/.test(ua) ? 'android' : null;
+  fetch('version.json', { cache: 'no-store' })
+    .then(function (r) { return r.json(); })
+    .then(function (m) {
+      ['ios', 'android'].forEach(function (p) {
+        var e = m[p], a = document.getElementById(p);
+        if (!e || !e.url) return;
+        a.href = e.url;
+        a.removeAttribute('aria-disabled');
+        document.getElementById(p + '-v').textContent = '최신 ' + (e.version || e.build);
+      });
+      if (m.notes) document.getElementById('notes').textContent = '이번 버전: ' + m.notes;
+    })
+    .catch(function () {});
+  if (mine) {
+    var a = document.getElementById(mine);
+    a.classList.add('mine');
+    a.parentNode.insertBefore(a, a.parentNode.firstChild);
+  }
+</script>
+</body>
+</html>
