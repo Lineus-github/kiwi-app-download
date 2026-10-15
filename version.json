@@ -1,9 +1,9 @@
 {
-  "notes": "앱을 켜면 로그인 화면을 바로 띄우고, 새 버전이 나오면 알려 줍니다",
+  "notes": "아래 탭 글자 항상 표시 · 로그아웃 전 확인 · 로그아웃 상태 홈에 로그인 단추 · 홈에 버전 표시",
   "ios": null,
   "android": {
-    "build": 4,
-    "version": "1.0.0 (4)",
-    "url": "https://github.com/Lineus-github/kiwi-app-download/releases/download/android-4/kiwi-test-4.apk"
+    "build": 5,
+    "version": "1.0.0 (5)",
+    "url": "https://github.com/Lineus-github/kiwi-app-download/releases/download/android-5/kiwi-test-5.apk"
   }
 }
