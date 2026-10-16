@@ -59,7 +59,7 @@
 
   <div class="get">
     <a class="btn" id="ios" aria-disabled="true" href="#">아이폰에서 받기 <small id="ios-v">준비 중</small></a>
-    <a class="btn" id="android" aria-disabled="true" href="#">안드로이드에서 받기 <small id="android-v">준비 중</small></a>
+    <a class="btn" id="android-top" href="#android-play">안드로이드에서 받기 <small>Play 스토어 · 아래 순서대로</small></a>
   </div>
   <p class="notes" id="notes"></p>
 
@@ -71,7 +71,7 @@
     <li>예전에 받은 «KIWI 테스트» 앱이 있으면 새 앱을 깐 뒤 지워 주세요. 예전 앱은 더 이상 갱신되지 않습니다.</li>
   </ol>
 
-  <h2>안드로이드 — Play 스토어로 받기 (권장)</h2>
+  <h2 id="android-play">안드로이드 — Play 스토어로 받기 (권장)</h2>
   <p>경고 창 없이 Play 스토어에서 설치하고, 새 버전도 Play 가 자동으로 업데이트합니다. 휴대폰에 로그인된 구글 계정으로 진행하세요.</p>
   <ol>
     <li><a href="https://groups.google.com/g/kiwi-app-testers">테스터 그룹</a>에 들어가 «그룹 가입» 을 누릅니다.</li>
@@ -79,10 +79,11 @@
     <li>이어서 나오는 «Google Play 에서 다운로드» 로 설치합니다. 가입 직후에는 반영까지 몇 분 걸릴 수 있습니다.</li>
   </ol>
 
-  <h2>안드로이드 — 파일로 받기</h2>
-  <p>구글 계정을 쓰기 어려울 때만 이 방법을 씁니다. Play 로 받은 앱과 서명이 같아 어느 쪽으로 받아도 서로 덮어 설치됩니다.</p>
+  <h2>안드로이드 — Play 로 안 될 때 파일로 받기</h2>
+  <p>Play 스토어로 설치가 안 될 때만 이 방법을 씁니다. Play 로 받은 앱과 서명이 같아 어느 쪽으로 받아도 서로 덮어 설치됩니다.</p>
+  <div class="get"><a class="btn" id="android" aria-disabled="true" href="#">설치 파일 내려받기 <small id="android-v">준비 중</small></a></div>
   <ol>
-    <li>«안드로이드에서 받기» 를 눌러 파일을 내려받습니다.</li>
+    <li>위 «설치 파일 내려받기» 를 눌러 파일을 내려받습니다.</li>
     <li>내려받은 파일을 열고, 처음 한 번은 «이 출처 허용» 을 켭니다.</li>
     <li>«Play 프로텍트에서 확인되지 않은 앱» 창이 뜨면 «세부정보 → 무시하고 설치» 를 누릅니다. 사내 배포판이라 스토어 심사를 거치지 않아 뜨는 안내입니다.</li>
     <li>새 버전도 같은 방법으로 받으면 덮어 설치됩니다. 로그인 상태는 그대로입니다.</li>
@@ -106,7 +107,7 @@
     })
     .catch(function () {});
   if (mine) {
-    var a = document.getElementById(mine);
+    var a = document.getElementById(mine === 'android' ? 'android-top' : mine);
     a.classList.add('mine');
     a.parentNode.insertBefore(a, a.parentNode.firstChild);
   }
