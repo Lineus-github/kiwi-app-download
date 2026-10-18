@@ -1,8 +1,8 @@
 {
-  "notes": "아이폰 패스키(얼굴·지문) 로그인 지원",
+  "notes": "아이폰 패스키 등록 메뉴 수정",
   "ios": {
-    "build": 7,
-    "version": "1.0.0 (7)",
+    "build": 8,
+    "version": "1.0.0 (8)",
     "url": "https://testflight.apple.com/join/6D3A3Gxb"
   },
   "android": {
