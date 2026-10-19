@@ -1,8 +1,8 @@
 {
   "notes": "학교 목록에 청암대학교·KIWI 체험 추가",
   "ios": {
-    "build": 10,
-    "version": "1.0.0 (10)",
+    "build": 13,
+    "version": "1.0.0 (13)",
     "url": "https://testflight.apple.com/join/6D3A3Gxb"
   },
   "android": {
