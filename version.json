@@ -1,13 +1,13 @@
 {
-  "notes": "알림 받기 준비, 홈 화면 위아래 밀기 수정, 얼굴·지문 로그인 안내 문구 정리",
+  "notes": "앱 안 화면이 확대돼 좌우로 흔들리던 것 수정",
   "ios": {
     "build": 9,
     "version": "1.0.0 (9)",
     "url": "https://testflight.apple.com/join/6D3A3Gxb"
   },
   "android": {
-    "build": 9,
-    "version": "1.0.0 (9)",
-    "url": "https://github.com/Lineus-github/kiwi-app-download/releases/download/android-9/kiwi-test-9.apk"
+    "build": 10,
+    "version": "1.0.0 (10)",
+    "url": "https://github.com/Lineus-github/kiwi-app-download/releases/download/android-10/kiwi-test-10.apk"
   }
 }
