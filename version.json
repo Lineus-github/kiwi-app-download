@@ -1,8 +1,8 @@
 {
   "notes": "청암대학교 추가, 강의실 로그인 수정",
   "ios": {
-    "build": 13,
-    "version": "1.0.0 (13)",
+    "build": 14,
+    "version": "1.0.0 (14)",
     "url": "https://testflight.apple.com/join/6D3A3Gxb"
   },
   "android": {
