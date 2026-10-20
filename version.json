@@ -1,13 +1,13 @@
 {
-  "notes": "학교 목록에 청암대학교·KIWI 체험 추가",
+  "notes": "청암대학교 추가, 강의실 로그인 수정",
   "ios": {
     "build": 13,
     "version": "1.0.0 (13)",
     "url": "https://testflight.apple.com/join/6D3A3Gxb"
   },
   "android": {
-    "build": 13,
-    "version": "1.0.0 (13)",
-    "url": "https://github.com/Lineus-github/kiwi-app-download/releases/download/android-13/kiwi-test-13.apk"
+    "build": 14,
+    "version": "1.0.0 (14)",
+    "url": "https://github.com/Lineus-github/kiwi-app-download/releases/download/android-14/kiwi-test-14.apk"
   }
 }
