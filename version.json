@@ -1,13 +1,13 @@
 {
-  "notes": "청암대학교 추가, 강의실 로그인 수정",
+  "notes": "Face ID(지문)는 한 번만 묻습니다. 로그인 화면·메뉴의 이름을 Face ID·Touch ID·지문으로 바꿨습니다. 알림 허용 전에 안내가 나옵니다.",
   "ios": {
     "build": 14,
     "version": "1.0.0 (14)",
     "url": "https://testflight.apple.com/join/6D3A3Gxb"
   },
   "android": {
-    "build": 14,
-    "version": "1.0.0 (14)",
-    "url": "https://github.com/Lineus-github/kiwi-app-download/releases/download/android-14/kiwi-test-14.apk"
+    "build": 15,
+    "version": "1.0.0 (15)",
+    "url": "https://github.com/Lineus-github/kiwi-app-download/releases/download/android-15/kiwi-test-15.apk"
   }
 }
