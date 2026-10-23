@@ -1,8 +1,8 @@
 {
   "notes": "로그인 플로우 정리: 앱 잠금 없앰, 켤 때 Face ID 자동 로그인, 로그인 전 홈, 설정 한 줄, 로그인 화면 단추 감춤",
   "ios": {
-    "build": 15,
-    "version": "1.0.0 (15)",
+    "build": 16,
+    "version": "1.0.0 (16)",
     "url": "https://testflight.apple.com/join/6D3A3Gxb"
   },
   "android": {
