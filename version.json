@@ -1,13 +1,13 @@
 {
-  "notes": "Face ID(지문)는 한 번만 묻습니다. 로그인 화면·메뉴의 이름을 Face ID·Touch ID·지문으로 바꿨습니다. 알림 허용 전에 안내가 나옵니다.",
+  "notes": "로그인 플로우 정리: 앱 잠금 없앰, 켤 때 Face ID 자동 로그인, 로그인 전 홈, 설정 한 줄, 로그인 화면 단추 감춤",
   "ios": {
     "build": 15,
     "version": "1.0.0 (15)",
     "url": "https://testflight.apple.com/join/6D3A3Gxb"
   },
   "android": {
-    "build": 15,
-    "version": "1.0.0 (15)",
-    "url": "https://github.com/Lineus-github/kiwi-app-download/releases/download/android-15/kiwi-test-15.apk"
+    "build": 16,
+    "version": "1.0.0 (16)",
+    "url": "https://github.com/Lineus-github/kiwi-app-download/releases/download/android-16/kiwi-test-16.apk"
   }
 }
