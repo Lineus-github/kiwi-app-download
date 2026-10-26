@@ -1,13 +1,13 @@
 {
-  "notes": "학교 추가(인하·주안·대덕), 학교 목록을 서버에서 받아 옴",
+  "notes": "시연 서버 Face ID 로그인, 학교 추가(인하·주안·대덕)",
   "ios": {
     "build": 17,
     "version": "1.0.0 (17)",
     "url": "https://testflight.apple.com/join/6D3A3Gxb"
   },
   "android": {
-    "build": 17,
-    "version": "1.0.0 (17)",
-    "url": "https://github.com/Lineus-github/kiwi-app-download/releases/download/android-17/kiwi-test-17.apk"
+    "build": 18,
+    "version": "1.0.0 (18)",
+    "url": "https://github.com/Lineus-github/kiwi-app-download/releases/download/android-18/kiwi-test-18.apk"
   }
 }
