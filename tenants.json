@@ -1,0 +1,118 @@
+{
+  "version": 1,
+  "tenants": [
+    {
+      "id": "dev",
+      "name": "개발(dev-kiwi-os)",
+      "visibleIn": [
+        "test"
+      ],
+      "tag": "시험용",
+      "issuer": "https://dev-kiwi-portal-auth-os-26.linus.kr/realms/dev-kiwi-os",
+      "systems": {
+        "portal": "https://dev-kiwi-portal-web-os-26.linus.kr/",
+        "career": "https://dev-ent-edu.linus.kr/",
+        "canvas": "https://dev-kiwi-canvas-os-26.linus.kr/login/openid_connect",
+        "panopto": "https://linus.ap.panopto.com/Panopto/Pages/Auth/Login.aspx?instance=kiwi-dev&ReturnUrl=/Panopto/Pages/Home.aspx"
+      },
+      "aliases": {
+        "career": [
+          "dev-ent-biz.linus.kr",
+          "dev-ent.linus.kr"
+        ],
+        "panopto": [
+          "lineus.ap.panopto.com"
+        ]
+      },
+      "passkey": true
+    },
+    {
+      "id": "pro",
+      "name": "KIWI 체험",
+      "visibleIn": [
+        "release",
+        "test"
+      ],
+      "issuer": "https://pro-auth.linus.kr/realms/pro",
+      "systems": {
+        "portal": "https://pro.linus.kr/",
+        "career": "https://ent-edu.linus.kr/",
+        "canvas": "https://linus-trial.instructure.com/login/openid_connect?iss=https%3A%2F%2Fpro-auth.linus.kr%2Frealms%2Fpro",
+        "panopto": "https://linus.ap.panopto.com/Panopto/Pages/Auth/Login.aspx?instance=kiwi-pro&ReturnUrl=/Panopto/Pages/Home.aspx"
+      },
+      "extraHosts": [
+        "sso.canvaslms.com"
+      ],
+      "aliases": {
+        "career": [
+          "ent-biz.linus.kr"
+        ],
+        "panopto": [
+          "lineus.ap.panopto.com"
+        ]
+      }
+    },
+    {
+      "id": "cheongam",
+      "name": "청암대학교",
+      "visibleIn": [
+        "release",
+        "test"
+      ],
+      "issuer": "https://auth.ca.ac.kr/realms/cheongam",
+      "systems": {
+        "portal": "https://portal.ca.ac.kr/",
+        "canvas": "https://canvas.ca.ac.kr/login/openid_connect",
+        "panopto": "https://cheongam.ap.panopto.com/Panopto/Pages/Auth/Login.aspx?instance=cheongam&ReturnUrl=/Panopto/Pages/Home.aspx"
+      },
+      "passkey": true
+    },
+    {
+      "id": "inhatc",
+      "name": "인하공업전문대학",
+      "visibleIn": [
+        "release",
+        "test"
+      ],
+      "issuer": "https://lms-auth.inhatc.ac.kr/realms/inhatc",
+      "systems": {
+        "portal": "https://lms.inhatc.ac.kr/",
+        "canvas": "https://lms-app.inhatc.ac.kr/login/openid_connect",
+        "panopto": "https://inhatc.ap.panopto.com/Panopto/Pages/Auth/Login.aspx?instance=inhatc&ReturnUrl=/Panopto/Pages/Home.aspx"
+      },
+      "extraHosts": [
+        "sso.inhatc.ac.kr"
+      ]
+    },
+    {
+      "id": "jiu",
+      "name": "주안대학원대학교",
+      "visibleIn": [
+        "release",
+        "test"
+      ],
+      "issuer": "https://jiu-auth.ac.kr/realms/jiu",
+      "systems": {
+        "portal": "https://jiu-study.ac.kr/",
+        "canvas": "https://jiu-canvas.ac.kr/login/openid_connect",
+        "panopto": "https://hanil.ap.panopto.com/Panopto/Pages/Auth/Login.aspx?instance=jiu&ReturnUrl=/Panopto/Pages/Home.aspx"
+      },
+      "passkey": true
+    },
+    {
+      "id": "ddu",
+      "name": "대덕대학교",
+      "visibleIn": [
+        "release",
+        "test"
+      ],
+      "issuer": "https://ddu-auth.ddu.ac.kr/realms/ddu",
+      "systems": {
+        "portal": "https://online.ddu.ac.kr/",
+        "canvas": "https://ddu-canvas.ddu.ac.kr/login/openid_connect",
+        "panopto": "https://ddu.ap.panopto.com/Panopto/Pages/Auth/Login.aspx?instance=DDU-V5-SAML&ReturnUrl=/Panopto/Pages/Home.aspx"
+      },
+      "passkey": true
+    }
+  ]
+}
