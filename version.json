@@ -1,8 +1,8 @@
 {
   "notes": "학교 추가(인하·주안·대덕), 학교 목록을 서버에서 받아 옴",
   "ios": {
-    "build": 16,
-    "version": "1.0.0 (16)",
+    "build": 17,
+    "version": "1.0.0 (17)",
     "url": "https://testflight.apple.com/join/6D3A3Gxb"
   },
   "android": {
