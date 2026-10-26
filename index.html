@@ -39,10 +39,13 @@
   .btn.mine { background: var(--brand); border-color: var(--brand); color: #fff; }
   .btn.mine small { color: rgba(255,255,255,.85); }
   .btn[aria-disabled="true"] { pointer-events: none; opacity: .55; }
+  a { color: var(--brand); }
   .btn:focus-visible { outline: 3px solid var(--brand); outline-offset: 2px; }
   .notes { margin-top: 20px; padding: 14px 16px; border-radius: 12px; background: var(--brand-pale); font-size: 15px; }
   .notes:empty { display: none; }
-  h2 { font-size: 17px; margin: 40px 0 8px; }
+  h2.part { font-size: 21px; margin: 48px 0 4px; padding-top: 24px; border-top: 1px solid var(--line); }
+  h3 { font-size: 17px; margin: 32px 0 8px; }
+  section ol { margin-top: 16px; }
   ol { margin: 0; padding-left: 20px; color: var(--muted); font-size: 15px; }
   li + li { margin-top: 6px; }
 </style>
@@ -53,41 +56,55 @@
     <img src="icon.png" alt="">
     <div>
       <h1>KIWI 앱</h1>
-      <p class="sub">사내 테스트판. 새 버전이 나오면 앱이 알려 줍니다.</p>
+      <p class="sub">쓰는 목적에 맞는 앱을 받으세요.</p>
     </div>
   </div>
 
-  <div class="get">
-    <a class="btn" id="ios" aria-disabled="true" href="#">아이폰에서 받기 <small id="ios-v">준비 중</small></a>
-    <a class="btn" id="android-top" href="#android-play">안드로이드에서 받기 <small>Play 스토어 · 아래 순서대로</small></a>
-  </div>
-  <p class="notes" id="notes"></p>
+  <section>
+    <h2 class="part">운영용 · 시연용</h2>
+    <p class="sub">학생·교수·시연에 쓰는 정식 앱 «KIWI - AI 학습 포털». 학교 서버(청암·KIWI 체험)에 접속합니다.</p>
+    <div class="get">
+      <a class="btn" id="prod-ios" href="https://apps.apple.com/kr/app/id6824405656">아이폰에서 받기 <small>App Store</small></a>
+      <a class="btn" id="prod-android" href="https://play.google.com/apps/testing/kr.linus.kiwi">안드로이드에서 받기 <small>Play 스토어</small></a>
+    </div>
+    <ol>
+      <li>아이폰은 App Store 에서 바로 설치합니다.</li>
+      <li>안드로이드는 정식 출시 전이라 등록된 테스터만 받을 수 있습니다. 링크를 열어 «테스터 되기» 를 누른 뒤 «Google Play 에서 다운로드» 로 설치합니다. 정식 출시 뒤에도 같은 앱을 그대로 씁니다.</li>
+      <li>«앱을 사용할 수 없습니다» 가 뜨면 아직 테스터가 아닌 계정입니다. <a href="https://groups.google.com/g/kiwi-app-testers">테스터 그룹</a>에 가입한 뒤 다시 여세요.</li>
+    </ol>
+  </section>
 
-  <h2>아이폰</h2>
-  <ol>
-    <li>앱스토어에서 <a href="https://apps.apple.com/app/testflight/id899247664">TestFlight</a> 를 설치합니다. KIWI 를 받고 새 버전을 받는 통로라 지우지 마세요.</li>
-    <li>위 «아이폰에서 받기» 를 눌러 테스트에 참여한 뒤 설치합니다.</li>
-    <li>새 버전은 TestFlight 가 알려 주고, 앱에서도 «받기» 창이 뜹니다.</li>
-    <li>예전에 받은 «KIWI 테스트» 앱이 있으면 새 앱을 깐 뒤 지워 주세요. 예전 앱은 더 이상 갱신되지 않습니다.</li>
-  </ol>
+  <section>
+    <h2 class="part">개발용</h2>
+    <p class="sub">사내 시험판 «KIWI 테스트». 개발 서버(dev)와 운영 학교를 고를 수 있고, 새 버전이 나오면 앱이 알려 줍니다. 학생에게 주지 마세요.</p>
+    <div class="get">
+      <a class="btn" id="ios" aria-disabled="true" href="#">아이폰에서 받기 <small id="ios-v">준비 중</small></a>
+      <a class="btn" id="android-top" href="#android-play">안드로이드에서 받기 <small>Play 스토어 · 아래 순서대로</small></a>
+    </div>
+    <p class="notes" id="notes"></p>
 
-  <h2 id="android-play">안드로이드 — Play 스토어로 받기 (권장)</h2>
-  <p>경고 창 없이 Play 스토어에서 설치하고, 새 버전도 Play 가 자동으로 업데이트합니다. 휴대폰에 로그인된 구글 계정으로 진행하세요.</p>
-  <ol>
-    <li><a href="https://groups.google.com/g/kiwi-app-testers">테스터 그룹</a>에 들어가 «그룹 가입» 을 누릅니다.</li>
-    <li><a href="https://play.google.com/apps/testing/kr.linus.kiwi.test">테스트 참여 링크</a>를 열어 «테스터 되기» 를 누릅니다.</li>
-    <li>이어서 나오는 «Google Play 에서 다운로드» 로 설치합니다. 그룹 가입 직후에는 반영까지 길면 몇 시간 걸립니다. «앱을 사용할 수 없습니다» 가 뜨면 링크를 연 화면의 구글 계정이 그룹에 가입한 계정인지 확인하고, 맞다면 잠시 뒤 다시 여세요.</li>
-  </ol>
+    <h3>아이폰</h3>
+    <ol>
+      <li>앱스토어에서 <a href="https://apps.apple.com/app/testflight/id899247664">TestFlight</a> 를 설치합니다. 새 버전을 받는 통로라 지우지 마세요.</li>
+      <li>위 «아이폰에서 받기» 를 눌러 테스트에 참여한 뒤 설치합니다.</li>
+      <li>새 버전은 TestFlight 가 알려 주고, 앱에서도 «받기» 창이 뜹니다.</li>
+    </ol>
 
-  <h2>안드로이드 — Play 로 안 될 때 파일로 받기</h2>
-  <p>Play 스토어로 설치가 안 될 때만 이 방법을 씁니다. Play 로 받은 앱과 서명이 같아 어느 쪽으로 받아도 서로 덮어 설치됩니다.</p>
-  <div class="get"><a class="btn" id="android" aria-disabled="true" href="#">설치 파일 내려받기 <small id="android-v">준비 중</small></a></div>
-  <ol>
-    <li>위 «설치 파일 내려받기» 를 눌러 파일을 내려받습니다.</li>
-    <li>내려받은 파일을 열고, 처음 한 번은 «이 출처 허용» 을 켭니다.</li>
-    <li>«Play 프로텍트에서 확인되지 않은 앱» 창이 뜨면 «세부정보 → 무시하고 설치» 를 누릅니다. 사내 배포판이라 스토어 심사를 거치지 않아 뜨는 안내입니다.</li>
-    <li>새 버전도 같은 방법으로 받으면 덮어 설치됩니다. 로그인 상태는 그대로입니다.</li>
-  </ol>
+    <h3 id="android-play">안드로이드 — Play 스토어로 받기 (권장)</h3>
+    <ol>
+      <li><a href="https://groups.google.com/g/kiwi-app-testers">테스터 그룹</a>에 가입되어 있어야 합니다.</li>
+      <li><a href="https://play.google.com/apps/testing/kr.linus.kiwi.test">테스트 참여 링크</a>를 열어 «테스터 되기» 를 누릅니다.</li>
+      <li>이어서 나오는 «Google Play 에서 다운로드» 로 설치합니다.</li>
+    </ol>
+
+    <h3>안드로이드 — Play 로 안 될 때 파일로 받기</h3>
+    <div class="get"><a class="btn" id="android" aria-disabled="true" href="#">설치 파일 내려받기 <small id="android-v">준비 중</small></a></div>
+    <ol>
+      <li>내려받은 파일을 열고, 처음 한 번은 «이 출처 허용» 을 켭니다.</li>
+      <li>«Play 프로텍트에서 확인되지 않은 앱» 창이 뜨면 «세부정보 → 무시하고 설치» 를 누릅니다. 사내 배포판이라 뜨는 안내입니다.</li>
+      <li>Play 로 받은 시험판과 서명이 같아 서로 덮어 설치됩니다.</li>
+    </ol>
+  </section>
 </main>
 <script>
   // 버전 정보는 앱이 읽는 것과 같은 version.json 에서 가져온다
@@ -107,9 +124,11 @@
     })
     .catch(function () {});
   if (mine) {
-    var a = document.getElementById(mine === 'android' ? 'android-top' : mine);
-    a.classList.add('mine');
-    a.parentNode.insertBefore(a, a.parentNode.firstChild);
+    [mine === 'android' ? 'prod-android' : 'prod-ios', mine === 'android' ? 'android-top' : mine].forEach(function (id) {
+      var a = document.getElementById(id);
+      a.classList.add('mine');
+      a.parentNode.insertBefore(a, a.parentNode.firstChild);
+    });
   }
 </script>
 </body>
