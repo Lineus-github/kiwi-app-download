@@ -1,13 +1,13 @@
 {
-  "notes": "로그인 플로우 정리: 앱 잠금 없앰, 켤 때 Face ID 자동 로그인, 로그인 전 홈, 설정 한 줄, 로그인 화면 단추 감춤",
+  "notes": "학교 추가(인하·주안·대덕), 학교 목록을 서버에서 받아 옴",
   "ios": {
     "build": 16,
     "version": "1.0.0 (16)",
     "url": "https://testflight.apple.com/join/6D3A3Gxb"
   },
   "android": {
-    "build": 16,
-    "version": "1.0.0 (16)",
-    "url": "https://github.com/Lineus-github/kiwi-app-download/releases/download/android-16/kiwi-test-16.apk"
+    "build": 17,
+    "version": "1.0.0 (17)",
+    "url": "https://github.com/Lineus-github/kiwi-app-download/releases/download/android-17/kiwi-test-17.apk"
   }
 }
