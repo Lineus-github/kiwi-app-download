@@ -97,7 +97,8 @@
         "portal": "https://jiu-study.ac.kr/",
         "canvas": "https://jiu-canvas.ac.kr/login/openid_connect",
         "panopto": "https://hanil.ap.panopto.com/Panopto/Pages/Auth/Login.aspx?instance=jiu&ReturnUrl=/Panopto/Pages/Home.aspx"
-      }
+      },
+      "passkey": true
     },
     {
       "id": "ddu",
@@ -111,7 +112,8 @@
         "portal": "https://online.ddu.ac.kr/",
         "canvas": "https://ddu-canvas.ddu.ac.kr/login/openid_connect",
         "panopto": "https://ddu.ap.panopto.com/Panopto/Pages/Auth/Login.aspx?instance=DDU-V5-SAML&ReturnUrl=/Panopto/Pages/Home.aspx"
-      }
+      },
+      "passkey": true
     }
   ]
 }
