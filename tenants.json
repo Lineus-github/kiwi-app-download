@@ -28,7 +28,7 @@
     },
     {
       "id": "pro",
-      "name": "KIWI 체험",
+      "name": "KIWI",
       "visibleIn": [
         "release",
         "test"
