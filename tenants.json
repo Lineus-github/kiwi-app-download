@@ -148,7 +148,9 @@
         "canvas": "https://linus.instructure.com/login/openid_connect?iss=https%3A%2F%2Fcareer-auth.linus.kr%2Frealms%2Fcareer"
       },
       "extraHosts": [
-        "sso.canvaslms.com"
+        "sso.canvaslms.com",
+        "login.microsoftonline.com",
+        "login.live.com"
       ],
       "passkey": true
     }
