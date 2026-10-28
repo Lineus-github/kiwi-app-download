@@ -4,6 +4,9 @@
     {
       "id": "dev",
       "name": "개발(dev-kiwi-os)",
+      "searchTerms": [
+        "dev"
+      ],
       "visibleIn": [
         "test"
       ],
@@ -56,6 +59,9 @@
     {
       "id": "cheongam",
       "name": "청암대학교",
+      "searchTerms": [
+        "cheongam"
+      ],
       "visibleIn": [
         "release",
         "test"
@@ -71,6 +77,10 @@
     {
       "id": "inhatc",
       "name": "인하공업전문대학",
+      "searchTerms": [
+        "인하공전",
+        "inhatc"
+      ],
       "visibleIn": [
         "release",
         "test"
@@ -88,6 +98,9 @@
     {
       "id": "jiu",
       "name": "주안대학원대학교",
+      "searchTerms": [
+        "jiu"
+      ],
       "visibleIn": [
         "release",
         "test"
@@ -103,6 +116,9 @@
     {
       "id": "ddu",
       "name": "대덕대학교",
+      "searchTerms": [
+        "ddu"
+      ],
       "visibleIn": [
         "release",
         "test"
@@ -118,6 +134,9 @@
     {
       "id": "linus",
       "name": "라이너스",
+      "searchTerms": [
+        "linus"
+      ],
       "visibleIn": [
         "release",
         "test"
